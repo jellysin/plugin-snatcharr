@@ -26,7 +26,7 @@ import tarfile
 import tempfile
 
 IMAGE_RE = re.compile(r"^[a-z0-9./-]+:[A-Za-z0-9._-]+@sha256:[0-9a-f]{64}$")
-CACHE_VOLUME = "jellyfin-plugin-snatcharr-trivy-cache"
+CACHE_VOLUME = "plugin-snatcharr-trivy-cache"
 TIMEOUT_SECONDS = 900
 MAX_FILES = 4096
 MAX_REPORT_BYTES = 64 * 1024 * 1024

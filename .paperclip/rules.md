@@ -1,4 +1,4 @@
-# Paperclip Operating Rules (lusoris/jellyfin-plugin-snatcharr)
+# Paperclip Operating Rules (jellysin/plugin-snatcharr)
 
 ## Operating Contract
 

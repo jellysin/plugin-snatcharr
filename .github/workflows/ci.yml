@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [main]
     types: [opened, synchronize, reopened, ready_for_review]
+  # jellysin/release-helper dispatches CI on release-please branches (release-please.yml).
+  workflow_dispatch:
 
 permissions:
   contents: read

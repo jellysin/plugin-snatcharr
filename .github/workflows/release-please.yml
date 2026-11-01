@@ -3,17 +3,25 @@ name: release-please
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
-# The job acts through the snatcharr-release GitHub App, not GITHUB_TOKEN: pull requests and
-# releases created with GITHUB_TOKEN start no workflows, so release pull requests got no CI and
-# releases never started release.yml (#9).
-permissions: {}
+# The jellysin release flow (jellysin/release-helper) runs release-please with the job's
+# GITHUB_TOKEN and no GitHub App. Pull requests created with that token start no workflows,
+# so the called workflow dispatches ci.yml on the release branch itself (ci.yml carries
+# workflow_dispatch for that). Same pattern as jellysin/plugin-lastfm.
+permissions:
+  contents: read
+
+concurrency:
+  group: release-please
+  cancel-in-progress: false
 
 jobs:
   release-please:
     name: Release
-    uses: plurano/horistes/.github/workflows/release-please.yml@c9632c6f9a06ccd560ffe4e1637649bcf19221db # main
-    with:
-      app_client_id: ${{ vars.RELEASE_APP_CLIENT_ID }}
-    secrets:
-      app_private_key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      actions: write
+    uses: jellysin/release-helper/.github/workflows/release-please.yml@c0f6e472f9ac4da2ccdd10afd0a7a167d938b566 # v1.6.0

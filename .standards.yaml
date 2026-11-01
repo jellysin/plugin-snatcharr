@@ -1,8 +1,8 @@
 ---
 version: 1
 repository:
-  owner: lusoris
-  name: jellyfin-plugin-snatcharr
+  owner: jellysin
+  name: plugin-snatcharr
   visibility: public
   description: "Jellyfin companion plugin for SnatchArr: adult scene metadata, image-set galleries and request routing"
   topics:
@@ -66,3 +66,6 @@ exceptions:
     entered: "2026-10-27"
     expires: "2027-01-25"
     reason: "category A, 90-day interval: the CI success aggregate (job status, if: always()) needs every job, and the trigger check does not read always(), so it reports status as skipped on a draft although it runs after a failed draft step (tools/ci/status.sh, planted cases in tools/ci/status_test.sh); the same check cannot see that the called lusoris/SnatchArr commit-policy.yml begins with the draft step; remove when cordanaLLM/praetor#1368 lands"
+release:
+  e2e:
+    since: 071a3ba3c2a15641e2c3bb95cb0c7f5c983e2024

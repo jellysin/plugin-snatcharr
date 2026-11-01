@@ -2,7 +2,7 @@
 <!-- Compiled automatically by praetorctl compile-context from AGENTS.md. DO NOT EDIT DIRECTLY. -->
 
 <!-- markdownlint-disable MD013 -->
-# lusoris/jellyfin-plugin-snatcharr Agent Operating Harness
+# jellysin/plugin-snatcharr Agent Operating Harness
 
 Before concluding any turn:
 

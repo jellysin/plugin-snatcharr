@@ -1,4 +1,4 @@
-# Contributing to jellyfin-plugin-snatcharr
+# Contributing to plugin-snatcharr
 
 Thank you for contributing! This repository adheres strictly to the
 **High-Integrity Systems Standard (HISS)** and modernized **NASA JPL
