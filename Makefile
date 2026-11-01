@@ -18,7 +18,7 @@ help: ## Show this help
 	@grep -hE '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-18s %s\n", $$1, $$2}'
 
 verify-all: governance-verify ci-scripts-verify ## Every gate (praetor universal verification)
-	@echo "All jellyfin-plugin-snatcharr verification gates passed."
+	@echo "All plugin-snatcharr verification gates passed."
 
 governance-verify: ## Agent context, caveman sources, praetor audit
 	$(PRAETORCTL) compile-context --verify

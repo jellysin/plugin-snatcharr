@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2026 lusoris <lusoris@pm.me>
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-# jellyfin-plugin-snatcharr
+# plugin-snatcharr
 
 A Jellyfin server plugin that connects Jellyfin to [SnatchArr](https://github.com/lusoris/SnatchArr): adult scene metadata, image-set galleries and request routing. The name joins "Jellyfin plugin" with "SnatchArr" (said "snatch-ar"), the application the plugin talks to.
 
@@ -47,5 +47,5 @@ generated agent context against `AGENTS.md`.
 1 recorded infraction; audit forbids growth.
 
 [praetor-hiss-badge]: https://img.shields.io/badge/Standards-HISS%20Adopted%20(1%20baselined)-yellow
-[praetor-hiss-agents]: https://github.com/lusoris/jellyfin-plugin-snatcharr/blob/HEAD/AGENTS.md
+[praetor-hiss-agents]: https://github.com/jellysin/plugin-snatcharr/blob/HEAD/AGENTS.md
 <!-- praetor:readme-governance:end -->

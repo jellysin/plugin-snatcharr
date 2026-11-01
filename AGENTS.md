@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD013 -->
-# lusoris/jellyfin-plugin-snatcharr Agent Operating Harness
+# jellysin/plugin-snatcharr Agent Operating Harness
 
 <!-- praetor:head -->
 
