@@ -60,6 +60,8 @@ exceptions:
     path: .github/workflows/release.yml
     reason: adoption found the release workflows short of the declared supply chain (SLSA Build Level 3 declared, Level 0 measured; enforce_cosign without a cosign signing step; require_sbom without an SBOM step); raise them as docs/guides/releasing.md in Praetor describes, then remove this entry
     expires: "2027-01-23"
+    category: A
+    entered: "2026-10-25"
   - rule: HISS-18
     path: .github/workflows/ci.yml
     category: A
